@@ -1,0 +1,13 @@
+deploy:
+  commands:
+    - name: echo something
+      command: echo "deploying something in Okteto"
+    - name: sleep
+      commands: echo "sleeping for 10 seconds" && sleep 10
+
+destroy:
+  commands:
+    - name: echo something
+      command: echo "destroying some external resource"
+    - name: sleep
+      commands: echo "sleeping for 30 seconds" && sleep 30
